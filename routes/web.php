@@ -15,8 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('a', function () {
-    return view('welcome');
+Route::get('index', function () {
+    return view('index');
+});
+Route::get('/', function () {
+    return view('test');
 });
 
 Auth::routes();
