@@ -8,19 +8,23 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Youshuo') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
     <link href="{{ asset('css/layui.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
         
-            <div class="container">
-                
+            <div class="layui-nav">
+                <div class="layui-col-md4">
+                        <img style="height:60px" src="{{asset('images/logo.png')}}" alt="">
+                </div>
+
+                <div class="layui-col-md5">
                     <ul class="layui-nav layui-bg-green">
-                        <li class="layui-nav-item"><a href="">墨绿导航</a></li>
+                       
                         <li class="layui-nav-item layui-this"><a href="">产品</a></li>
                         <li class="layui-nav-item"><a href="">大数据</a></li>
                         <li class="layui-nav-item">
@@ -32,9 +36,25 @@
                             </dl>
                         </li>
                         <li class="layui-nav-item"><a href="">社区</a></li>
+    
+                        <li class="layui-nav-item">
+                            <a href="">控制台<span class="layui-badge">9</span></a>
+                        </li>
+                        <li class="layui-nav-item">
+                            <a href="">个人中心<span class="layui-badge-dot"></span></a>
+                        </li>
+                        <li class="layui-nav-item">
+                             <a href="javascript:;"><img src="http://t.cn/RCzsdCq" class="layui-nav-img">我</a>
+                             <dl class="layui-nav-child">
+                             <dd><a href="javascript:;">修改信息</a></dd>
+                             <dd><a href="javascript:;">安全管理</a></dd>
+                             <dd><a href="javascript:;">退了</a></dd>
+                             </dl>
+                        </li>
+                        
                     </ul>
 
-                
+                    </div>
 
             </div>
         
