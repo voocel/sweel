@@ -8,8 +8,6 @@
 require('./bootstrap');
 
 
-require('./layui');
-
 window.Vue = require('vue');
 
 Vue.config.devtools = true;
